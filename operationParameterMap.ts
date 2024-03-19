@@ -575,46 +575,6 @@ export const operationParameterMap: Record<string, Entry> = {
         parameters: [
         ]
     },
-    '/file_activities-GET': {
-        parameters: [
-            {
-                name: 'file_id'
-            },
-            {
-                name: 'activity_types'
-            },
-            {
-                name: 'comment_fields'
-            },
-            {
-                name: 'versions_fields'
-            },
-            {
-                name: 'annotation_fields'
-            },
-            {
-                name: 'task_fields'
-            },
-            {
-                name: 'app_activity_fields'
-            },
-            {
-                name: 'reply_limit'
-            },
-            {
-                name: 'status'
-            },
-            {
-                name: 'enable_replies'
-            },
-            {
-                name: 'limit'
-            },
-            {
-                name: 'marker'
-            },
-        ]
-    },
     '/file_requests/{file_request_id}/copy-POST': {
         parameters: [
             {

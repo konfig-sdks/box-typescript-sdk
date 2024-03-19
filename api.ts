@@ -26,7 +26,6 @@ export * from './api/domain-restrictions-for-collaborations-api';
 export * from './api/downloads-api';
 export * from './api/email-aliases-api';
 export * from './api/events-api';
-export * from './api/file-activities-api';
 export * from './api/file-requests-api';
 export * from './api/file-version-legal-holds-api';
 export * from './api/file-version-retentions-api';

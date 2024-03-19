@@ -63,7 +63,6 @@
     + [`box.emailAliases.removeAlias`](#boxemailaliasesremovealias)
     + [`box.events.events`](#boxeventsevents)
     + [`box.events.events_0`](#boxeventsevents_0)
-    + [`box.fileActivities.listByFileId`](#boxfileactivitieslistbyfileid)
     + [`box.fileRequests.copyRequestToFolder`](#boxfilerequestscopyrequesttofolder)
     + [`box.fileRequests.deletePermanently`](#boxfilerequestsdeletepermanently)
     + [`box.fileRequests.getInformation`](#boxfilerequestsgetinformation)
@@ -2342,82 +2341,6 @@ const events_0Response = await box.events.events_0();
 #### 🌐 Endpoint<a id="🌐-endpoint"></a>
 
 `/events` `OPTIONS`
-
-[🔙 **Back to Table of Contents**](#table-of-contents)
-
----
-
-
-### `box.fileActivities.listByFileId`<a id="boxfileactivitieslistbyfileid"></a>
-
-List file activities by file ID.
-
-#### 🛠️ Usage<a id="🛠️-usage"></a>
-
-```typescript
-const listByFileIdResponse = await box.fileActivities.listByFileId({
-  fileId: "fileId_example",
-  status: "open",
-});
-```
-
-#### ⚙️ Parameters<a id="⚙️-parameters"></a>
-
-##### fileId: `string`<a id="fileid-string"></a>
-
-File ID for which to retrieve activity
-
-##### activityTypes: `string`[]<a id="activitytypes-string"></a>
-
-Comma-separated list of activity types to return. This field is ignored if marker is passed in. Defaults to all activity types.
-
-##### commentFields: `string`[]<a id="commentfields-string"></a>
-
-fields that are required for comments
-
-##### versionsFields: `string`[]<a id="versionsfields-string"></a>
-
-fields that are required for versions
-
-##### annotationFields: `string`[]<a id="annotationfields-string"></a>
-
-fields that are required for annotations
-
-##### taskFields: `string`[]<a id="taskfields-string"></a>
-
-fields that are required for tasks
-
-##### appActivityFields: `string`[]<a id="appactivityfields-string"></a>
-
-fields that are required for `app_activity`
-
-##### replyLimit: `string`<a id="replylimit-string"></a>
-
-maximum number of replies the response should contain per each top level activity[annotation, comment]
-
-##### status: `'open' | 'resolved' | 'deleted'`<a id="status-open--resolved--deleted"></a>
-
-Used to filter an annotation or a comment based on the status
-
-##### enableReplies: `boolean`<a id="enablereplies-boolean"></a>
-
-Whether or not replies should be returned
-
-##### limit: `number`<a id="limit-number"></a>
-
-The maximum number of items to return per page.
-
-##### marker: `string`<a id="marker-string"></a>
-
-Defines the position marker at which to begin returning results. This is used when paginating using marker-based pagination.  This requires `usemarker` to be set to `true`.
-
-#### 🔄 Return<a id="🔄-return"></a>
-
-[Activities](./models/activities.ts)
-
-#### 🌐 Endpoint<a id="🌐-endpoint"></a>
-
-`/file_activities` `GET`
 
 [🔙 **Back to Table of Contents**](#table-of-contents)
 

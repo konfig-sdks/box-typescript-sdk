@@ -25,7 +25,6 @@ import {
   DownloadsApi,
   EmailAliasesApi,
   EventsApi,
-  FileActivitiesApi,
   FileRequestsApi,
   FileVersionLegalHoldsApi,
   FileVersionRetentionsApi,
@@ -99,7 +98,6 @@ export class Box extends BoxCustom {
   readonly downloads: DownloadsApi;
   readonly emailAliases: EmailAliasesApi;
   readonly events: EventsApi;
-  readonly fileActivities: FileActivitiesApi;
   readonly fileRequests: FileRequestsApi;
   readonly fileVersionLegalHolds: FileVersionLegalHoldsApi;
   readonly fileVersionRetentions: FileVersionRetentionsApi;
@@ -172,7 +170,6 @@ export class Box extends BoxCustom {
     this.downloads = new DownloadsApi(configuration);
     this.emailAliases = new EmailAliasesApi(configuration);
     this.events = new EventsApi(configuration);
-    this.fileActivities = new FileActivitiesApi(configuration);
     this.fileRequests = new FileRequestsApi(configuration);
     this.fileVersionLegalHolds = new FileVersionLegalHoldsApi(configuration);
     this.fileVersionRetentions = new FileVersionRetentionsApi(configuration);
